@@ -1,0 +1,3 @@
+Um pequeno restaurante de hamburgueres, que está crescendo, necessita de um sistema para realizar pedidos usando um tablet, e que os enviem à cozinha para que sejam preparados de forma ordenada e eficiente.
+
+A interface front-end da aplicação Burger Queen já foi criado. Agora precisamos criar o back-end para manejar os dados. Neste caso, isso será feito através de uma API rest que será compatível com as requisições vindas do front.
