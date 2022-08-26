@@ -4,6 +4,7 @@
   "description": "API para estudo PDI",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./api_burguer_queen/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
