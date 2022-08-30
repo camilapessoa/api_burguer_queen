@@ -1,15 +1,14 @@
-const express = require('express')
-const app = express()
+import express, { json } from 'express';
+import users from './usersRoutes.js';
 
-const users = require('./usersRoutes')
+const app = express();
 
-app.use(express.json())
+app.use(json());
 
-module.exports = app =>{
-    app.use(express.json())
-    app.use(users)
-    app.get('/', (req, res) => res.send('API Burguer Queen'))
-    
-}
+export default (app) => {
+  app.use(json());
+  app.use(users);
+  app.get('/', (req, res) => res.send('API Burguer Queen'));
+};
 
-//quando fala que esse arquivo servirá como um intermediário, significa um middleware?
+// quando fala que esse arquivo servirá como um intermediário, significa um middleware?

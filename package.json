@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API para estudo PDI",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon ./api_burguer_queen/index",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +17,10 @@
     "sequelize": "^6.21.3"
   },
   "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.19",
     "sequelize-cli": "^6.4.1"
-  }
+  }  
 }

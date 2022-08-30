@@ -1,18 +1,18 @@
-const express = require('express')
-const routes = require('./routes/index')
+import express from 'express';
+import routes from './routes/index.js';
 
-const app = express()
+const app = express();
 
-const port = 3000
+const port = 3000;
 
-routes(app)
+routes(app);
 
-//app.use(express.json())
+// app.use(express.json())
 
 /* app.get('/test', (req, res) => res
     .status(200)
     .send({ message:'Welcome to BQs API'}))
  */
-app.listen(port, () => console.log(`Server running up the hill beyond ${port}`))
+app.listen(port, () => console.log(`Server running up the hill beyond ${port}`));
 
-module.exports = app
+export default app;
