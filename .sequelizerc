@@ -1,8 +1,8 @@
 import { resolve } from 'path';
 
 export default {
-    'config': resolve('./db/config', 'config.json'),
-    'models-path': resolve('./db/models'),
-    'seeders-path':resolve('/db/seeders'),
-    'migrations-path': resolve('/db/migrations')
+    'config': resolve(__dirname,'db','config', 'config.js'),
+    'models-path': resolve(__dirname, 'db','models'),
+    'seeders-path':resolve(__dirname,'db','seeders'),
+    'migrations-path': resolve(__dirname,'db', 'migrations')
 }

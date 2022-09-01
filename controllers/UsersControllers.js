@@ -1,11 +1,14 @@
-import database from '../db/models/index.js';
+import * as database from '../db/models/index.js';
 
 class UsersController {
   static async getAllUsers(req, res) {
     try {
+      
       const allUsers = await database.Users.findAll();
+      console.log(allUsers)
       return res.status(200).json(allUsers);
     } catch (error) {
+      console.log('users', Users)
       return res.status(500).json(error.message);
     }
   }
@@ -34,14 +37,14 @@ class UsersController {
     }
   }
 
-  static async updateUser(req, res) {
+ /*  static async updateUser(req, res) {
     const updatedInfo = req.body;
     try {
 
     } catch (error) {
 
     }
-  }
+  } */
 }
 
 export default UsersController;
