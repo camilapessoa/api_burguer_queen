@@ -1,5 +1,5 @@
-import { Router } from 'express'; // por que é desestruturado?
-import UsersController from '../controllers/UsersControllers.js';
+import { Router } from 'express';
+import UsersController from '../controllers/UsersControllers.mjs';
 
 const router = Router();
 

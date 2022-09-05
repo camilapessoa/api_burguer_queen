@@ -1,14 +1,12 @@
-import * as database from '../db/models/index.js';
+import database from '../db/models/index.mjs';
 
 class UsersController {
   static async getAllUsers(req, res) {
     try {
-      
       const allUsers = await database.Users.findAll();
-      console.log(allUsers)
       return res.status(200).json(allUsers);
     } catch (error) {
-      console.log('users', Users)
+      //console.log('users', allUsers)
       return res.status(500).json(error.message);
     }
   }

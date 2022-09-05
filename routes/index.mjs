@@ -1,5 +1,5 @@
 import express, { json } from 'express';
-import users from './usersRoutes.js';
+import users from './usersRoutes.mjs';
 
 const app = express();
 

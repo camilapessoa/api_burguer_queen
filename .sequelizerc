@@ -1,6 +1,8 @@
-import { resolve } from 'path';
+const resolve = require('path');
 
-export default {
+console.log("FDSFSDFDSFS", resolve(__dirname,'db','config', 'config.js'))
+
+module.exports = {
     'config': resolve(__dirname,'db','config', 'config.js'),
     'models-path': resolve(__dirname, 'db','models'),
     'seeders-path':resolve(__dirname,'db','seeders'),
